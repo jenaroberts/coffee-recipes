@@ -1,10 +1,9 @@
-import CCoffee from "./components/CCoffee";
+// import CCoffee from "./components/CCoffee";
 import FCoffee from "./components/FCoffee";
 function App() {
   return (
     <>
-      <CCoffee firstName="Jena" />
-      <FCoffee firstName="Jena" />
+      {/*  <CCoffee firstName="Jena" /> */} <FCoffee firstName="Jena" />
     </>
   );
 }
