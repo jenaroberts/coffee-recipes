@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
-
 function FCoffee({ firstName }) {
   const [coffeeList, setCoffeeList] = useState();
   const [temperature, setTemperature] = useState("hot");
-
   useEffect(() => {
     fetch(`https://api.sampleapis.com/coffee/${temperature}`)
       .then((response) => response.json())
       .then((data) => setCoffeeList(data))
-      //.then(setCoffeeList) is the same as line 9
       .catch(console.error);
   }, [temperature]);
 
