@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactForm() {
+  let navigate = useNavigate();
   const [formData, setFormData] = useState({});
 
   //   const [firstName, setFirstName] = useState("");
